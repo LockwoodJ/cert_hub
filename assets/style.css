@@ -219,8 +219,8 @@ canvas.sim-canvas{width:100%;height:260px;border-radius:18px;background:linear-g
 .deep-card{background:white;border:1px solid var(--line);border-radius:24px;padding:20px;box-shadow:var(--soft-shadow)}
 .deep-card h3{margin-top:0}
 .lesson-nav{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
-.lesson-nav a{background:#fff;border:1px solid rgba(255,255,255,.38);color:#fff;padding:9px 12px;border-radius:999px}
-.lesson-nav a:hover{background:rgba(255,255,255,.16);text-decoration:none}
+.lesson-nav a{background:#fff!important;border:2px solid rgba(0,51,153,.28)!important;color:#003399!important;padding:9px 12px;border-radius:999px;font-weight:950;text-decoration:none!important;box-shadow:0 6px 14px rgba(0,51,153,.08)}
+.lesson-nav a:hover{background:#f4f7ff!important;color:#001d66!important;border-color:#003399!important;text-decoration:none;box-shadow:0 10px 20px rgba(0,51,153,.14)}
 .tool-hero-layout{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);gap:24px;align-items:center}
 .hero-tool-card{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:26px;padding:18px;box-shadow:0 16px 38px rgba(0,0,0,.18)}
 .hero-tool-card img{width:100%;height:260px;object-fit:contain;background:white;border-radius:20px;padding:12px}
@@ -570,4 +570,41 @@ a.btn.primary:hover,
   background: #ffffff !important;
   color: #003399 !important;
   border-color: rgba(255, 255, 255, 0.85) !important;
+}
+
+
+/* Video embed polish */
+.video-frame iframe{width:100%;height:100%;border:0;border-radius:14px;}
+.video-source-link{display:inline-flex;align-items:center;justify-content:center;margin-top:10px;color:#003399!important;background:#ffffff!important;border:1px solid rgba(0,51,153,.24)!important;}
+.video-source-link:hover{background:#003399!important;color:#ffffff!important;}
+
+
+/* ABSOLUTE FINAL PATCH — Tool hero lesson buttons readable before hover */
+body.tools-page section.hero .lesson-nav a,
+body.tools-page section.hero .lesson-nav a:link,
+body.tools-page section.hero .lesson-nav a:visited,
+body.tools-page .lesson-nav a,
+body.tools-page .lesson-nav a:link,
+body.tools-page .lesson-nav a:visited {
+  background: #ffffff !important;
+  color: #003399 !important;
+  -webkit-text-fill-color: #003399 !important;
+  border: 2px solid rgba(255,255,255,0.85) !important;
+  border-radius: 999px !important;
+  font-weight: 950 !important;
+  font-size: 0.95rem !important;
+  line-height: 1.2 !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+  box-shadow: 0 6px 14px rgba(0,0,0,.10) !important;
+}
+body.tools-page section.hero .lesson-nav a:hover,
+body.tools-page section.hero .lesson-nav a:focus-visible,
+body.tools-page .lesson-nav a:hover,
+body.tools-page .lesson-nav a:focus-visible {
+  background: #f4f7ff !important;
+  color: #001d66 !important;
+  -webkit-text-fill-color: #001d66 !important;
+  border-color: #33CC66 !important;
+  text-decoration: none !important;
 }
