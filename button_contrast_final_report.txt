@@ -1,0 +1,9 @@
+Final Tool Button Contrast Patch
+
+What changed:
+- Added a final CSS patch at the end of assets/style.css so it overrides earlier button rules.
+- Targeted all common button patterns on tool pages: .btn.secondary, .btn.btn-secondary, .lesson-nav a, .source-link, .tool-cta-row buttons, hero secondary buttons, and card secondary buttons.
+- White/light buttons now use Lockwood STEM blue text by default, not only on hover.
+- Hover and keyboard focus states keep readable dark-blue text.
+- Primary green buttons use dark text for stronger contrast.
+- Added a tools-page class to tool page <body> tags for safer future targeting.

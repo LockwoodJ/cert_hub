@@ -468,3 +468,106 @@ button.btn.btn-secondary:hover {
   background:#f7fff9;
   color:var(--ink);
 }
+
+/* FINAL TOOL-PAGE BUTTON CONTRAST PATCH
+   This intentionally sits at the end of the stylesheet so it wins over earlier
+   white/outline button rules. It keeps every light button readable before hover. */
+.tools-page .btn,
+.tool-cta-row .btn,
+.lesson-nav a,
+.hero-actions .btn.secondary,
+.card .btn.secondary,
+.deep-card .btn.secondary,
+.video-card .btn.secondary,
+.media-card .btn.secondary,
+.start-panel .btn.secondary,
+.actions .btn.secondary,
+a.btn.secondary,
+a.btn.btn-secondary,
+.btn.secondary,
+.btn.btn-secondary,
+.source-link,
+a.source-link {
+  text-decoration: none !important;
+}
+
+.tool-cta-row .btn.secondary,
+.lesson-nav a,
+.hero-actions .btn.secondary,
+.card .btn.secondary,
+.deep-card .btn.secondary,
+.video-card .btn.secondary,
+.media-card .btn.secondary,
+.start-panel .btn.secondary,
+.actions .btn.secondary,
+a.btn.secondary,
+a.btn.btn-secondary,
+.btn.secondary,
+.btn.btn-secondary,
+.source-link,
+a.source-link {
+  background: #ffffff !important;
+  color: #003399 !important;
+  border: 2px solid rgba(0, 51, 153, 0.42) !important;
+  box-shadow: 0 6px 16px rgba(0, 51, 153, 0.12) !important;
+}
+
+.tool-cta-row .btn.secondary:hover,
+.lesson-nav a:hover,
+.hero-actions .btn.secondary:hover,
+.card .btn.secondary:hover,
+.deep-card .btn.secondary:hover,
+.video-card .btn.secondary:hover,
+.media-card .btn.secondary:hover,
+.start-panel .btn.secondary:hover,
+.actions .btn.secondary:hover,
+a.btn.secondary:hover,
+a.btn.btn-secondary:hover,
+.btn.secondary:hover,
+.btn.btn-secondary:hover,
+.source-link:hover,
+a.source-link:hover,
+.tool-cta-row .btn.secondary:focus-visible,
+.lesson-nav a:focus-visible,
+a.btn.secondary:focus-visible,
+a.btn.btn-secondary:focus-visible,
+.btn.secondary:focus-visible,
+.btn.btn-secondary:focus-visible,
+.source-link:focus-visible {
+  background: #f4f7ff !important;
+  color: #001d66 !important;
+  border-color: #003399 !important;
+  outline: 3px solid rgba(51, 204, 102, 0.55) !important;
+  outline-offset: 2px !important;
+}
+
+/* Preserve primary/green buttons as dark text on green for strong contrast. */
+.tool-cta-row .btn.primary,
+.hero-actions .btn.primary,
+.card .btn.primary,
+a.btn.primary,
+.btn.primary {
+  background: #33cc66 !important;
+  color: #053114 !important;
+  border: 2px solid #33cc66 !important;
+}
+
+.tool-cta-row .btn.primary:hover,
+.hero-actions .btn.primary:hover,
+.card .btn.primary:hover,
+a.btn.primary:hover,
+.btn.primary:hover {
+  background: #2fbd60 !important;
+  color: #041f0d !important;
+  border-color: #2fbd60 !important;
+}
+
+/* Buttons inside dark hero sections should never appear as white text on a white pill. */
+.hero .btn.secondary,
+.hero a.btn.secondary,
+.hero .lesson-nav a,
+.hero a.source-link {
+  background: #ffffff !important;
+  color: #003399 !important;
+  border-color: rgba(255, 255, 255, 0.85) !important;
+}
