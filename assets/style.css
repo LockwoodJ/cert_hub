@@ -351,3 +351,120 @@ body{background:radial-gradient(circle at 8% 0%,rgba(51,204,102,.16),transparent
 @media(max-width:1000px){.pathway{grid-template-columns:repeat(2,1fr)}.progress-lane{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:640px){.pathway,.progress-lane{grid-template-columns:1fr}.fablab-stat-grid{grid-template-columns:1fr}.hero-actions,.start-panel .actions,.tool-cta-row{flex-direction:column}.hero-actions .btn,.start-panel .btn,.tool-cta-row .btn{width:100%}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}.card:hover,.tool-card:hover,.deep-card:hover,.video-card:hover,.subpage-list a:hover,.module-list a:hover,.pathway-card:hover{transform:none!important}}
+
+/* Button contrast repair: ensures light/white buttons always have readable text */
+.btn.secondary,
+.btn.btn-secondary,
+a.btn.secondary,
+a.btn.btn-secondary,
+button.btn.secondary,
+button.btn.btn-secondary {
+  background: #ffffff !important;
+  color: var(--blue) !important;
+  border: 2px solid rgba(0, 51, 153, 0.28) !important;
+  box-shadow: 0 6px 14px rgba(0, 51, 153, 0.08);
+}
+
+.btn.secondary:hover,
+.btn.btn-secondary:hover,
+a.btn.secondary:hover,
+a.btn.btn-secondary:hover,
+button.btn.secondary:hover,
+button.btn.btn-secondary:hover {
+  background: #f4f7ff !important;
+  color: #001d66 !important;
+  border-color: var(--blue) !important;
+}
+
+/* Tool-page lesson buttons were white with white text; keep them light with blue text. */
+.lesson-nav a,
+.tool-cta-row .btn.secondary,
+.source-link {
+  background: #ffffff !important;
+  color: var(--blue) !important;
+  border: 2px solid rgba(0, 51, 153, 0.24) !important;
+  text-decoration: none !important;
+}
+
+.lesson-nav a:hover,
+.tool-cta-row .btn.secondary:hover,
+.source-link:hover {
+  background: #f4f7ff !important;
+  color: #001d66 !important;
+  border-color: var(--blue) !important;
+}
+
+/* Keep buttons readable when placed on cards or hero sections. */
+.card .btn.secondary,
+.deep-card .btn.secondary,
+.start-panel .btn.secondary,
+.hero-actions .btn.secondary,
+.actions .btn.secondary {
+  color: var(--blue) !important;
+}
+
+
+/* Media enrichment: photo galleries, classroom video placeholders, and visual checkpoints */
+.media-gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:18px;
+  margin:20px 0;
+}
+.media-card{
+  background:white;
+  border:1px solid var(--line);
+  border-radius:24px;
+  box-shadow:var(--soft-shadow);
+  overflow:hidden;
+  transition:.18s ease;
+}
+.media-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.media-card img{
+  width:100%;height:190px;object-fit:contain;background:#fff;padding:12px;
+  border-bottom:1px solid rgba(0,51,153,.10);
+}
+.media-card .media-body{padding:16px}
+.media-card h3{margin:0 0 6px;font-size:1.04rem;color:var(--blue)}
+.media-card p{margin:0;color:var(--muted);font-size:.93rem}
+.media-placeholder{
+  min-height:190px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:18px;
+  background:linear-gradient(135deg,#f7fbff,#ffffff);
+  color:var(--blue);
+  font-weight:950;
+  border-bottom:1px solid rgba(0,51,153,.10);
+}
+.video-placeholder{
+  min-height:180px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:22px;
+  border-radius:18px;
+  background:linear-gradient(135deg,#071a47,#003399);
+  color:white;
+  font-weight:950;
+}
+.video-task{
+  margin-top:12px;
+  background:#f7fbff;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:11px 13px;
+  color:var(--ink);
+  font-size:.92rem;
+}
+.media-note{
+  margin-top:14px;
+  padding:14px 16px;
+  border-left:6px solid var(--green);
+  border-radius:16px;
+  background:#f7fff9;
+  color:var(--ink);
+}
