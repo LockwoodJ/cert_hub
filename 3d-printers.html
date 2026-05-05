@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D Printers | FabLab Certification Hub</title>
+<link rel="stylesheet" href="assets/style.css">
+<script defer src="assets/script.js"></script>
+</head>
+<body><header class="site-header"><div class="nav"><a class="brand" href="index.html"><span class="brand-mark">LS</span><span>FabLab Certification Hub</span></a><nav class="nav-links"><a href="index.html#start">Start Here</a><a href="level-1.html">Level 1</a><a href="level-2.html">Level 2</a><a href="level-3.html">Level 3</a><a href="level-4.html">Level 4</a><a href="tool-directory.html">Tools</a><a href="certification-tracker.html">Tracker</a><a href="lab-safety-contract.html">Safety Contract</a></nav></div></header>
+<section class="hero"><div class="hero-inner"><div class="breadcrumbs"><a href="level-2.html">Level 2</a> / 3D Printers</div><div class="eyebrow">Digital Fabrication</div><h1>3D Printer Certification</h1><p>Start here for 3D printing. Then open the specific machine page for the Bambu Lab P1S hands-on training.</p></div></section>
+<section><div class="container grid">
+<div class="card span-7"><h2>Machine-Specific Training</h2><div class="subpage-list"><a href="tools/bambulab-p1s.html"><strong>Bambu Lab P1S</strong><span>3D Printer training page</span></a></div></div>
+<div class="card span-5"><h2>Print Settings Simulator</h2><div class="sim"><div class="controls"><label>Layer Height<input id="layerHeight" type="range" min="0.12" max="0.32" step="0.04" value="0.20" oninput="updatePrinterSim()"></label><label>Infill %<input id="infill" type="range" min="5" max="80" value="20" oninput="updatePrinterSim()"></label><label>Supports<select id="supports" onchange="updatePrinterSim()"><option value="no">No</option><option value="yes">Yes</option></select></label></div><div id="printerOutput" class="output"></div></div></div>
+<div class="card span-12"><h2>Core 3D Printing Habits</h2><ul class="checklist"><li>Start with a clean, printable CAD model.</li><li>Preview before printing.</li><li>Watch the first layer.</li><li>Document failures and improve the design.</li></ul></div>
+</div></section>
+<footer class="footer"><div class="footer-inner"><div><strong>Lockwood STEM FabLab</strong><br>Train carefully. Build confidently. Leave the lab better than you found it.</div><div><a href="index.html">Certification Hub Home</a></div></div>
+<section><div class="container"><h2>Quick FAQ</h2><div class="faq-grid"><div class="faq-item"><strong>Can I use the tool after reading this?</strong><p>Only if you have completed the required certification and have instructor approval when required.</p></div><div class="faq-item"><strong>What should I do if something goes wrong?</strong><p>Stop immediately, make the area safe, and ask for help before restarting.</p></div><div class="faq-item"><strong>What if my project fails?</strong><p>Document what happened, identify the cause, and use the failure to improve your next attempt.</p></div></div></div></section>
+</footer><section><div class="container"><h2>Failure-Based Learning: If This Happens → Do This</h2>
+<table class="failure-table"><thead><tr><th>What You Notice</th><th>Best Response</th></tr></thead><tbody><tr><td><strong>First layer fails</strong></td><td>Stop early and fix setup.</td></tr><tr><td><strong>Supports excessive</strong></td><td>Re-orient or adjust support settings.</td></tr><tr><td><strong>Print too long</strong></td><td>Simplify settings or choose another process.</td></tr></tbody></table></div></section></body>
+</html>

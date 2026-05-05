@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CNC Mill | FabLab Certification Hub</title>
+<link rel="stylesheet" href="assets/style.css">
+<script defer src="assets/script.js"></script>
+</head>
+<body><header class="site-header"><div class="nav"><a class="brand" href="index.html"><span class="brand-mark">LS</span><span>FabLab Certification Hub</span></a><nav class="nav-links"><a href="index.html#start">Start Here</a><a href="level-1.html">Level 1</a><a href="level-2.html">Level 2</a><a href="level-3.html">Level 3</a><a href="level-4.html">Level 4</a><a href="tool-directory.html">Tools</a><a href="certification-tracker.html">Tracker</a><a href="lab-safety-contract.html">Safety Contract</a></nav></div></header>
+<section class="hero"><div class="hero-inner"><div class="breadcrumbs"><a href="level-3.html">Level 3</a> / CNC</div><div class="eyebrow">Advanced Equipment</div><h1>CNC Certification</h1><p>Choose the machine-specific CNC page for the DMC2 Mini, FoxAlien, or Genmitsu platform.</p></div></section>
+<section><div class="container grid">
+<div class="card span-7"><h2>Machine-Specific Training</h2><div class="subpage-list"><a href="tools/dmc2-mini-cnc.html"><strong>DMC2 Mini CNC Mill</strong><span>CNC Mill training page</span></a><a href="tools/foxalien-cnc.html"><strong>FoxAlien CNC</strong><span>CNC Router training page</span></a><a href="tools/genmitsu-cnc.html"><strong>Genmitsu CNC</strong><span>CNC Router training page</span></a></div></div>
+<div class="card span-5"><h2>Chip Load Simulator</h2><div class="sim"><div class="controls"><label>Feed Rate<input id="feedRate" type="range" min="5" max="80" value="25" oninput="updateCNCSim()"></label><label>RPM<input id="rpm" type="range" min="5000" max="24000" value="12000" oninput="updateCNCSim()"></label><label>Flutes<select id="flutes" onchange="updateCNCSim()"><option>1</option><option selected>2</option><option>3</option><option>4</option></select></label></div><div id="cncOutput" class="output"></div></div></div>
+<div class="card span-12"><h2>Core CNC Habits</h2><ul class="checklist"><li>Secure the stock before cutting.</li><li>Preview every toolpath.</li><li>Verify bit, zero, and clearance.</li><li>Stop for chatter, burning, or unexpected motion.</li></ul></div>
+</div></section>
+<footer class="footer"><div class="footer-inner"><div><strong>Lockwood STEM FabLab</strong><br>Train carefully. Build confidently. Leave the lab better than you found it.</div><div><a href="index.html">Certification Hub Home</a></div></div>
+<section><div class="container"><h2>Quick FAQ</h2><div class="faq-grid"><div class="faq-item"><strong>Can I use the tool after reading this?</strong><p>Only if you have completed the required certification and have instructor approval when required.</p></div><div class="faq-item"><strong>What should I do if something goes wrong?</strong><p>Stop immediately, make the area safe, and ask for help before restarting.</p></div><div class="faq-item"><strong>What if my project fails?</strong><p>Document what happened, identify the cause, and use the failure to improve your next attempt.</p></div></div></div></section>
+</footer><section><div class="container"><h2>Failure-Based Learning: If This Happens → Do This</h2>
+<table class="failure-table"><thead><tr><th>What You Notice</th><th>Best Response</th></tr></thead><tbody><tr><td><strong>Chatter/burning</strong></td><td>Stop; check feed/speed/workholding.</td></tr><tr><td><strong>Stock moves</strong></td><td>Emergency stop.</td></tr><tr><td><strong>Toolpath near clamps</strong></td><td>Do not run.</td></tr></tbody></table></div></section></body>
+</html>
